@@ -7,4 +7,4 @@ RUN mkdir /tmp/mcr_installer && \
     unzip MCR_R2016b_glnxa64_installer.zip && \
     ./install -mode silent -agreeToLicense yes && \
     rm -Rf /tmp/mcr_installer
- 
+RUN apt-get install -y libxt-dev
